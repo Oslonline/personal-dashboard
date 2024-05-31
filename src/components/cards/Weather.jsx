@@ -94,15 +94,15 @@ export default function Weather({ country, city }) {
                     <div className="flex touch-pan-x gap-2 overflow-x-auto overflow-y-hidden overscroll-contain pb-4">
                         {weatherForecast.map((forecast, index) => (
                             <div key={index} className="flex h-fit w-28 min-w-28 flex-col items-center rounded-xl bg-gray-50/10 p-2 align-bottom">
-                                <img className="h-16 w-16" src={`/static/weathericons/${forecast.icon}.svg`} alt="" />
+                                <img className="h-8 w-8" src={`/static/weathericons/${forecast.icon}.svg`} alt="" />
                                 <div className="flex w-full justify-around">
                                     <div className="flex flex-col items-center">
-                                        <p>Min</p>
-                                        <p>{forecast.tempMin.toFixed(0)}°C</p>
+                                        <p className="text-xs">Min</p>
+                                        <p className="font-semibold">{forecast.tempMin.toFixed(0)}°C</p>
                                     </div>
                                     <div className="flex flex-col items-center">
-                                        <p>Max</p>
-                                        <p>{forecast.tempMax.toFixed(0)}°C</p>
+                                        <p className="text-xs">Max</p>
+                                        <p className="font-semibold">{forecast.tempMax.toFixed(0)}°C</p>
                                     </div>
                                 </div>
                                 <p className="font-semibold">{forecast.date}</p>

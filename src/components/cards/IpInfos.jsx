@@ -46,7 +46,7 @@ export default function IpInfos({ ipInfo }) {
     const buttonIcon = masked ? eyeOffIcon : eyeIcon;
 
     return (
-        <div className="col-start-5 row-span-2 rounded-xl bg-gradient-to-br from-zinc-950/80 to-zinc-950/40 p-5 pt-3 backdrop-blur-xl">
+        <div className="col-start-5 row-span-2 rounded-xl bg-gradient-to-br from-zinc-950/80 to-zinc-950/40 p-5 pt-3 pr-3 backdrop-blur-xl">
             <div className="flex h-full flex-col justify-between gap-2">
                 <div className="flex items-center justify-between">
                     <h2 className="text-lg font-semibold">Ip Infos</h2>
@@ -54,7 +54,7 @@ export default function IpInfos({ ipInfo }) {
                         {buttonIcon}
                     </button>
                 </div>
-                <div>
+                <div className="overflow-y-auto pr-4 flex flex-col gap-2">
                     <ul className="flex list-none flex-col gap-2 text-wrap">
                         <li className="lg:truncate">{masked && ipInfo ? "X".repeat(ipInfo?.ip.length) : ipInfo?.ip}</li>
                         <li className="lg:truncate">
@@ -66,11 +66,11 @@ export default function IpInfos({ ipInfo }) {
                         <li className="lg:truncate">{masked && ipInfo ? "X".repeat(ipInfo?.network.autonomous_system_number.length) : ipInfo?.network.autonomous_system_number}</li>
                         <li className="lg:truncate">{masked && ipInfo ? "X".repeat(ipInfo?.network.autonomous_system_organization.length) : ipInfo?.network.autonomous_system_organization}</li>
                     </ul>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                    {securityParams.map((param) => (
-                        <SecurityBadge key={param.key} active={ipInfo?.security[param.key]} message={ipInfo?.security[param.key] ? param.trueMessage : param.falseMessage} />
-                    ))}
+                    <div className="flex flex-wrap gap-2">
+                        {securityParams.map((param) => (
+                            <SecurityBadge key={param.key} active={ipInfo?.security[param.key]} message={ipInfo?.security[param.key] ? param.trueMessage : param.falseMessage} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

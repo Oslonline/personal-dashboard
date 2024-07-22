@@ -40,4 +40,4 @@ Check the .env file to replace the API keys with your own.
 
 # Screenshots
 
-<img src="https://oslo418.com/meow/screens/personal-dashboard.png"/>
+![Capture d’écran 2024-07-22 à 11.15.48](https://i.imgur.com/Sw4l1rx.png)

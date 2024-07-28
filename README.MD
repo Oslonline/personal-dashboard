@@ -40,4 +40,4 @@ Check the .env file to replace the API keys with your own.
 
 # Screenshots
 
-![Capture d’écran 2024-07-22 à 11.15.48](https://i.imgur.com/Sw4l1rx.png)
+![Capture d’écran 2024-07-28 à 20.25.40](https://i.imgur.com/BOolqaH.png)

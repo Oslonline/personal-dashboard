@@ -25,7 +25,7 @@ export default function App() {
     }, []);
 
     return (
-        <div className="grid h-screen w-screen grid-cols-5 grid-rows-5 gap-5 bg-gradient-radial p-5 text-gray-50 2xl:p-10">
+        <div className="grid h-screen w-screen grid-cols-5 grid-rows-5 gap-5 bg-gradient-to-br from-cyan-500 via-cyan-900 to-zinc-900 p-5 text-gray-50 2xl:p-10">
             {loadingIpInfo ? (
                 <div className="flex h-screen w-screen flex-col items-center justify-center gap-5">
                     <p className="text-2xl font-semibold">Loading...</p>

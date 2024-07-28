@@ -19,7 +19,7 @@ export default function Crypto() {
     }, []);
 
     return (
-        <div className="col-span-2 col-start-4 row-span-2 row-start-3 flex flex-col justify-between rounded-xl bg-gradient-to-br from-zinc-950/80 to-zinc-950/40 p-5 pr-3 backdrop-blur-xl">
+        <div className="col-span-2 col-start-4 row-span-2 row-start-3 flex flex-col justify-between rounded-xl border-zinc-800 bg-gradient-to-br from-zinc-950/80 to-zinc-950/40 p-5 pr-3 shadow shadow-zinc-800 backdrop-blur-xl">
             <h4 className="pb-2 text-lg font-semibold">Top 5 Cryptos</h4>
             <div className="flex touch-pan-y flex-col gap-2 overflow-y-auto overflow-x-hidden overscroll-contain pr-2">
                 {cryptoInfos.map((crypto, index) => (

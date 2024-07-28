@@ -66,7 +66,7 @@ export default function Weather({ country, city }) {
     };
 
     return (
-        <div className="col-span-2 col-start-3 row-span-2 rounded-xl bg-gradient-to-br from-zinc-950 to-zinc-950/40 p-5 pb-1 backdrop-blur-xl">
+        <div className="col-span-2 col-start-3 row-span-2 rounded-xl border-zinc-800 bg-gradient-to-br from-zinc-950 to-zinc-950/40 p-5 pb-1 shadow shadow-zinc-800 backdrop-blur-xl">
             {loading ? (
                 <div className="flex h-full w-full flex-col items-center justify-center">
                     <p>Loading weather...</p>

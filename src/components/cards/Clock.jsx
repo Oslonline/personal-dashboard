@@ -21,13 +21,13 @@ export default function Clock() {
     };
 
     return (
-        <div className="col-span-2 row-span-1 lg:row-span-2 rounded-xl bg-clock bg-cover bg-center bg-no-repeat backdrop-blur-xl">
+        <div className="col-span-2 row-span-1 rounded-xl border border-zinc-800 bg-clock bg-cover bg-center bg-no-repeat shadow shadow-zinc-800 backdrop-blur-xl lg:row-span-2">
             <div className="h-full w-full rounded-xl bg-gradient-to-br from-zinc-950/60 to-transparent p-5">
-                <p className=" md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+                <p className=" font-semibold md:text-3xl lg:text-4xl xl:text-5xl">
                     {getDayName(date.getDay())} {date.getDate()} {getMonthName(date.getMonth())} {date.getFullYear()}
                 </p>
                 <p></p>
-                <p className="font-mono md: lg:text-7xl font-bold xl:text-8xl">{date.toLocaleTimeString()}</p>
+                <p className="md: font-mono font-bold lg:text-7xl xl:text-8xl">{date.toLocaleTimeString()}</p>
             </div>
         </div>
     );
